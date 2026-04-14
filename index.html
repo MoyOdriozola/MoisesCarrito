@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburguesas la Toña</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="stylecarrito.css">
+
+</head>
+
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+ <div class="container">
+
+   <a class="navbar-brand" href="#hero1">
+     <img src="img/logo.JPG" alt="Logo" width="50" height="50">
+   </a>
+
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarNav">
+
+     <ul class="navbar-nav me-auto">
+       <li class="nav-item">
+         <a class="nav-link" href="#productos">Hamburguesas</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#contacto">Contacto</a>
+       </li>
+     </ul>
+
+     <div class="d-flex">
+       <button class="btn btn-outline-light me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito">
+         <i class="fas fa-shopping-cart"></i>
+         <span class="badge bg-danger" id="contador-carrito">0</span>
+       </button>
+
+       <button class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+         <i class="fas fa-bars"></i>
+       </button>
+     </div>
+
+   </div>
+ </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-white text-center d-flex align-items-center justify-content-center" id="hero1" style="margin-top: 80px;">
+ <div class="container">
+   <h1 class="display-4">Encuentra la hamburguesa perfecta</h1>
+   <p class="lead">Nuestras hamburguesas son elaboradas con los mejores ingredientes caseros.</p>
+   <a href="#productos" class="btn btn-warning btn-lg">Nuestras Hamburguesas</a>
+ </div>
+</section>
+
+<!-- PRODUCTOS -->
+<div class="container py-4" id="productos">
+
+<h1 class="text-center mb-4">HAMBURGUESAS "LA TOÑA"</h1>
+
+<div class="row">
+
+<!-- PRODUCTOS -->
+<div class="col-md-8">
+<div class="row g-3">
+
+<!-- 1 -->
+<div class="col-md-4">
+<div class="card">
+<img src="img/h_especial.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Hamburguesa especial</h5>
+<button class="btn btn-success w-100" onclick="agregarProducto('Hamburguesa especial')">Agregar</button>
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-md-4">
+<div class="card">
+<img src="img/mike-PxJ9zkM2wdA-unsplash.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Hamburguesa Betabel</h5>
+<button class="btn btn-success w-100" onclick="agregarProducto('Hamburguesa Betabel')">Agregar</button>
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-md-4">
+<div class="card">
+<img src="img/ham_child.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Producto 3</h5>
+<button class="btn btn-success w-100" onclick="agregarProducto('Producto 3')">Agregar</button>
+</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-md-4">
+<div class="card">
+<img src="img/h_especial.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Producto 4</h5>
+<button class="btn btn-success w-100" onclick="agregarProducto('Producto 4')">Agregar</button>
+</div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="col-md-4">
+<div class="card">
+<img src="img/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Producto 5</h5>
+<button class="btn btn-success w-100" onclick="agregarProducto('Producto 5')">Agregar</button>
+</div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="col-md-4">
+<div class="card">
+<img src="img/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Producto 6</h5>
+<button class="btn btn-success w-100" onclick="agregarProducto('Producto 6')">Agregar</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- CARRITO -->
+<div class="col-md-4">
+<div class="card">
+<div class="card-header bg-dark text-white">Carrito</div>
+
+<ul class="list-group" id="lista-carrito">
+<li class="list-group-item text-muted text-center">No hay productos</li>
+</ul>
+
+<div class="card-footer text-center">
+<button class="btn btn-danger" onclick="eliminarProducto()">Eliminar último</button>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- OFFCANVAS MENU -->
+<div class="offcanvas offcanvas-start" id="offcanvasMenu">
+<div class="offcanvas-header">
+<h5>Menú</h5>
+<button class="btn-close" data-bs-dismiss="offcanvas"></button>
+</div>
+
+<div class="offcanvas-body">
+<ul>
+<li><a href="#hero1">Inicio</a></li>
+<li><a href="#productos">Productos</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</div>
+</div>
+
+<!-- OFFCANVAS CARRITO -->
+<div class="offcanvas offcanvas-end" id="offcanvasCarrito">
+<div class="offcanvas-header">
+<h5>Tu carrito</h5>
+<button class="btn-close" data-bs-dismiss="offcanvas"></button>
+</div>
+
+<div class="offcanvas-body">
+<ul id="lista-carrito-offcanvas" class="list-group">
+<li class="list-group-item text-muted text-center">No hay productos</li>
+</ul>
+
+<button class="btn btn-danger mt-3" onclick="eliminarProducto()">Eliminar último</button>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer id="contacto" class="bg-dark text-white text-center p-4">
+
+<address>
+<a href="https://maps.app.goo.gl/dNE5pY73eexW3Dqc8" target="_blank" rel="noreferrer noopener" class="text-white">
+Calle de Medellín, Ciudad de México
+</a>
+<br>
+Teléfono: <a href="tel:+525524709301" class="text-white">+52 55 2470 9301</a>
+</address>
+
+<p>&copy; 2025 Hamburguesas La Toña</p>
+
+<div>
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin"></i>
+</div>
+
+</footer>
+
+<script src="carrito.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
