@@ -1,45 +1,31 @@
-<!-- ========================= -->
-<!-- SECCIÓN PRODUCTOS -->
-<!-- ========================= -->
-
-<section id="productos" 
+<section id="productos" class="py-5"
 style="
-position: relative;
-background-image: url('./IMG/hamburguesa.jpg'); 
+background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+url('./IMG/hamburguesa.jpg');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-padding: 80px 0;
 ">
 
-    <!-- CAPA OSCURA -->
-    <div style="
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.65);
-    "></div>
+    <div class="container">
 
-    <div class="container position-relative" style="z-index:2;">
-
-        <!-- TÍTULO -->
+        <!-- TITULO -->
         <div class="text-center mb-5">
-            
-            <h2 style="
-            color:white;
-            font-weight:700;
-            font-size:48px;
-            text-shadow:2px 2px 10px rgba(0,0,0,0.9);
+
+            <h2 class="fw-bold"
+            style="
+            color: white !important;
+            font-size: 3rem;
+            text-shadow: 3px 3px 10px black;
             ">
                 Encuentra la hamburguesa perfecta
             </h2>
 
-            <p style="
-            color:#f1f1f1;
-            font-size:20px;
-            text-shadow:2px 2px 8px rgba(0,0,0,0.9);
+            <p
+            style="
+            color: #f1f1f1 !important;
+            font-size: 1.2rem;
+            text-shadow: 2px 2px 8px black;
             ">
                 Nuestras hamburguesas son elaboradas con los mejores ingredientes caseros.
             </p>
@@ -49,13 +35,13 @@ padding: 80px 0;
         <!-- PRODUCTOS -->
         <div class="row g-4">
 
-            <!-- CARD 1 -->
+            <!-- PRODUCTO 1 -->
             <div class="col-md-4">
                 <div class="card h-100 shadow">
 
-                    <img src="./IMG/burger1.jpg" 
-                    class="card-img-top" 
-                    alt="Hamburguesa clásica">
+                    <img src="./IMG/burger1.jpg"
+                    class="card-img-top"
+                    alt="Hamburguesa Clásica">
 
                     <div class="card-body d-flex flex-column">
 
@@ -77,12 +63,12 @@ padding: 80px 0;
                 </div>
             </div>
 
-            <!-- CARD 2 -->
+            <!-- PRODUCTO 2 -->
             <div class="col-md-4">
                 <div class="card h-100 shadow">
 
-                    <img src="./IMG/burger2.jpg" 
-                    class="card-img-top" 
+                    <img src="./IMG/burger2.jpg"
+                    class="card-img-top"
                     alt="Hamburguesa BBQ">
 
                     <div class="card-body d-flex flex-column">
@@ -105,12 +91,12 @@ padding: 80px 0;
                 </div>
             </div>
 
-            <!-- CARD 3 -->
+            <!-- PRODUCTO 3 -->
             <div class="col-md-4">
                 <div class="card h-100 shadow">
 
-                    <img src="./IMG/burger3.jpg" 
-                    class="card-img-top" 
+                    <img src="./IMG/burger3.jpg"
+                    class="card-img-top"
                     alt="Hamburguesa Doble">
 
                     <div class="card-body d-flex flex-column">
