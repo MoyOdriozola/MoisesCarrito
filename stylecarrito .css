@@ -6,7 +6,7 @@ html {
 /* Animaciones de agregado/eliminado */
 .agregado {
   background-color: #d4edda !important; /* Verde claro */
-  color: grey !important;
+  color: #47464E !important;
   animation: fade 1s ease-in-out;
 }
 
