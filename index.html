@@ -2,18 +2,19 @@
 <html lang="es">
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamburguesas la Toña</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<title>Hamburguesas La Toña</title>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="stylecarrito.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- TU CSS -->
+<link rel="stylesheet" href="stylecarrito.css">
 
 </head>
 
@@ -21,56 +22,67 @@
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
 
-    <a class="navbar-brand" href="#hero1">
-      <img src="img/logo.JPG" alt="Logo" width="50" height="50">
-    </a>
+<div class="container">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<a class="navbar-brand" href="#hero1">
+<img src="img/logo.JPG" alt="Logo" width="50" height="50">
+</a>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
+<button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
 
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#productos">Hamburguesas</a>
-        </li>
+<span class="navbar-toggler-icon"></span>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
-        </li>
-      </ul>
+</button>
 
-      <div class="d-flex">
+<div class="collapse navbar-collapse" id="navbarNav">
 
-        <!-- CARRITO -->
-        <button class="btn btn-outline-light me-2"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasCarrito">
+<ul class="navbar-nav me-auto">
 
-          <i class="fas fa-shopping-cart"></i>
+<li class="nav-item">
+<a class="nav-link" href="#productos">Hamburguesas</a>
+</li>
 
-          <span class="badge bg-danger" id="contador-carrito">
-            0
-          </span>
+<li class="nav-item">
+<a class="nav-link" href="#contacto">Contacto</a>
+</li>
 
-        </button>
+</ul>
 
-        <!-- MENÚ -->
-        <button class="btn btn-outline-light"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasMenu">
+<div class="d-flex">
 
-          <i class="fas fa-bars"></i>
+<!-- BOTÓN CARRITO -->
+<button class="btn btn-outline-light me-2"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasCarrito">
 
-        </button>
+<i class="fas fa-shopping-cart"></i>
 
-      </div>
+<span class="badge bg-danger"
+      id="contador-carrito">
 
-    </div>
-  </div>
+0
+
+</span>
+
+</button>
+
+<!-- BOTÓN MENÚ -->
+<button class="btn btn-outline-light"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasMenu">
+
+<i class="fas fa-bars"></i>
+
+</button>
+
+</div>
+
+</div>
+</div>
 </nav>
 
 <!-- HERO -->
@@ -78,368 +90,401 @@
          id="hero1"
          style="margin-top: 80px; min-height: 80vh;">
 
-  <div class="container">
+<div class="container">
 
-    <h1 class="display-4">
-      Encuentra la hamburguesa perfecta
-    </h1>
+<h1 class="display-4">
+Encuentra la hamburguesa perfecta
+</h1>
 
-    <p class="lead">
-      Nuestras hamburguesas son elaboradas con los mejores ingredientes caseros.
-    </p>
+<p class="lead">
+Nuestras hamburguesas son elaboradas con los mejores ingredientes caseros.
+</p>
 
-    <!-- BOTÓN RESERVAS -->
-    <a href="https://forms.cloud.microsoft/r/SNsYDCBuJ3"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="btn btn-warning btn-lg mt-3">
+<!-- BOTÓN RESERVAS -->
+<a href="https://forms.cloud.microsoft/r/SNsYDCBuJ3"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn btn-warning btn-lg mt-3">
 
-      Reservas
+Reservas
 
-    </a>
+</a>
 
-  </div>
+</div>
 </section>
 
 <!-- PRODUCTOS -->
 <div class="container py-4" id="productos">
 
-  <h1 class="text-center mb-4">
-    HAMBURGUESAS "LA TOÑA"
-  </h1>
+<h1 class="text-center mb-4">
+HAMBURGUESAS "LA TOÑA"
+</h1>
 
-  <div class="row">
+<div class="row">
 
-    <!-- PRODUCTOS -->
-    <div class="col-md-8">
+<!-- PRODUCTOS -->
+<div class="col-md-8">
 
-      <div class="row g-3">
+<div class="row g-3">
 
-        <!-- PRODUCTO 1 -->
-        <div class="col-md-4">
-          <div class="card">
+<!-- PRODUCTO 1 -->
+<div class="col-md-4">
 
-            <img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/h_especial.jpg"
-                 class="card-img-top">
+<div class="card">
 
-            <div class="card-body">
+<img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/h_especial.jpg"
+     class="card-img-top">
 
-              <h5>Hamburguesa especial</h5>
+<div class="card-body">
 
-              <button class="btn btn-success w-100"
-                      onclick="agregarProducto('Hamburguesa especial')">
+<h5>Hamburguesa especial</h5>
 
-                Agregar
+<button class="btn btn-success w-100"
+        onclick="agregarProducto('Hamburguesa especial')">
 
-              </button>
+Agregar
 
-            </div>
-          </div>
-        </div>
+</button>
 
-        <!-- PRODUCTO 2 -->
-        <div class="col-md-4">
-          <div class="card">
-
-            <img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/mike-PxJ9zkM2wdA-unsplash.jpg"
-                 class="card-img-top">
-
-            <div class="card-body">
-
-              <h5>Hamburguesa Betabel</h5>
-
-              <button class="btn btn-success w-100"
-                      onclick="agregarProducto('Hamburguesa Betabel')">
-
-                Agregar
-
-              </button>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- PRODUCTO 3 -->
-        <div class="col-md-4">
-          <div class="card">
-
-            <img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/ham_child.jpg"
-                 class="card-img-top">
-
-            <div class="card-body">
-
-              <h5>Producto 3</h5>
-
-              <button class="btn btn-success w-100"
-                      onclick="agregarProducto('Producto 3')">
-
-                Agregar
-
-              </button>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- PRODUCTO 4 -->
-        <div class="col-md-4">
-          <div class="card">
-
-            <img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/h_especial.jpg"
-                 class="card-img-top">
-
-            <div class="card-body">
-
-              <h5>Producto 4</h5>
-
-              <button class="btn btn-success w-100"
-                      onclick="agregarProducto('Producto 4')">
-
-                Agregar
-
-              </button>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- PRODUCTO 5 -->
-        <div class="col-md-4">
-          <div class="card">
-
-            <img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg"
-                 class="card-img-top">
-
-            <div class="card-body">
-
-              <h5>Producto 5</h5>
-
-              <button class="btn btn-success w-100"
-                      onclick="agregarProducto('Producto 5')">
-
-                Agregar
-
-              </button>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- PRODUCTO 6 -->
-        <div class="col-md-4">
-          <div class="card">
-
-            <img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg"
-                 class="card-img-top">
-
-            <div class="card-body">
-
-              <h5>Producto 6</h5>
-
-              <button class="btn btn-success w-100"
-                      onclick="agregarProducto('Producto 6')">
-
-                Agregar
-
-              </button>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- CARRITO -->
-    <div class="col-md-4">
-
-      <div class="card">
-
-        <div class="card-header bg-dark text-white">
-          Carrito
-        </div>
-
-        <ul class="list-group" id="lista-carrito">
-
-          <li class="list-group-item text-muted text-center">
-            No hay productos
-          </li>
-
-        </ul>
-
-        <div class="card-footer text-center">
-
-          <button class="btn btn-danger"
-                  onclick="eliminarProducto()">
-
-            Eliminar último
-
-          </button>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
+</div>
+</div>
 </div>
 
-<!-- OFFCANVAS MENU -->
-<div class="offcanvas offcanvas-start" id="offcanvasMenu">
+<!-- PRODUCTO 2 -->
+<div class="col-md-4">
 
-  <div class="offcanvas-header">
+<div class="card">
 
-    <h5>Menú</h5>
+<img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/mike-PxJ9zkM2wdA-unsplash.jpg"
+     class="card-img-top">
 
-    <button class="btn-close"
-            data-bs-dismiss="offcanvas">
-    </button>
+<div class="card-body">
 
-  </div>
+<h5>Hamburguesa Betabel</h5>
 
-  <div class="offcanvas-body">
+<button class="btn btn-success w-100"
+        onclick="agregarProducto('Hamburguesa Betabel')">
 
-    <ul>
-      <li><a href="#hero1">Inicio</a></li>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
+Agregar
 
-  </div>
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCTO 3 -->
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/ham_child.jpg"
+     class="card-img-top">
+
+<div class="card-body">
+
+<h5>Producto 3</h5>
+
+<button class="btn btn-success w-100"
+        onclick="agregarProducto('Producto 3')">
+
+Agregar
+
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCTO 4 -->
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/h_especial.jpg"
+     class="card-img-top">
+
+<div class="card-body">
+
+<h5>Producto 4</h5>
+
+<button class="btn btn-success w-100"
+        onclick="agregarProducto('Producto 4')">
+
+Agregar
+
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCTO 5 -->
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg"
+     class="card-img-top">
+
+<div class="card-body">
+
+<h5>Producto 5</h5>
+
+<button class="btn btn-success w-100"
+        onclick="agregarProducto('Producto 5')">
+
+Agregar
+
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCTO 6 -->
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://cloud1moisesodrio.blob.core.windows.net/imagenesmoy/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg"
+     class="card-img-top">
+
+<div class="card-body">
+
+<h5>Producto 6</h5>
+
+<button class="btn btn-success w-100"
+        onclick="agregarProducto('Producto 6')">
+
+Agregar
+
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- CARRITO -->
+<div class="col-md-4">
+
+<div class="card">
+
+<div class="card-header bg-dark text-white">
+Carrito
+</div>
+
+<ul class="list-group"
+    id="lista-carrito">
+
+<li class="list-group-item text-muted text-center">
+No hay productos
+</li>
+
+</ul>
+
+<div class="card-footer text-center">
+
+<button class="btn btn-danger"
+        onclick="eliminarProducto()">
+
+Eliminar último
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- OFFCANVAS MENÚ -->
+<div class="offcanvas offcanvas-start"
+     id="offcanvasMenu">
+
+<div class="offcanvas-header">
+
+<h5>Menú</h5>
+
+<button class="btn-close"
+        data-bs-dismiss="offcanvas">
+</button>
+
+</div>
+
+<div class="offcanvas-body">
+
+<ul>
+<li><a href="#hero1">Inicio</a></li>
+<li><a href="#productos">Productos</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+
+</div>
 </div>
 
 <!-- OFFCANVAS CARRITO -->
-<div class="offcanvas offcanvas-end" id="offcanvasCarrito">
+<div class="offcanvas offcanvas-end"
+     id="offcanvasCarrito">
 
-  <div class="offcanvas-header">
+<div class="offcanvas-header">
 
-    <h5>Tu carrito</h5>
+<h5>Tu carrito</h5>
 
-    <button class="btn-close"
-            data-bs-dismiss="offcanvas">
-    </button>
+<button class="btn-close"
+        data-bs-dismiss="offcanvas">
+</button>
 
-  </div>
+</div>
 
-  <div class="offcanvas-body">
+<div class="offcanvas-body">
 
-    <ul id="lista-carrito-offcanvas"
-        class="list-group">
+<ul class="list-group"
+    id="lista-carrito-offcanvas">
 
-      <li class="list-group-item text-muted text-center">
-        No hay productos
-      </li>
+<li class="list-group-item text-muted text-center">
+No hay productos
+</li>
 
-    </ul>
+</ul>
 
-    <button class="btn btn-danger mt-3"
-            onclick="eliminarProducto()">
+<button class="btn btn-danger mt-3"
+        onclick="eliminarProducto()">
 
-      Eliminar último
+Eliminar último
 
-    </button>
+</button>
 
-  </div>
+</div>
 </div>
 
 <!-- FOOTER -->
 <footer id="contacto"
         class="bg-dark text-white text-center p-4">
 
-  <address>
+<address>
 
-    <a href="https://maps.app.goo.gl/dNE5pY73eexW3Dqc8"
-       target="_blank"
-       rel="noreferrer noopener"
-       class="text-white">
+<a href="https://maps.app.goo.gl/dNE5pY73eexW3Dqc8"
+   target="_blank"
+   class="text-white">
 
-      Calle de Medellín, Ciudad de México
+Calle de Medellín, Ciudad de México
 
-    </a>
+</a>
 
-    <br>
+<br>
 
-    Teléfono:
+Teléfono:
 
-    <a href="tel:+525524709301"
-       class="text-white">
+<a href="tel:+525524709301"
+   class="text-white">
 
-      +52 55 2470 9301
++52 55 2470 9301
 
-    </a>
+</a>
 
-  </address>
+</address>
 
-  <p>&copy; 2025 Hamburguesas La Toña</p>
+<p>&copy; 2025 Hamburguesas La Toña</p>
 
-  <div>
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-linkedin"></i>
-  </div>
+<div>
+
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin"></i>
+
+</div>
 
 </footer>
 
-<!-- SCRIPT DEL CARRITO -->
+<!-- JAVASCRIPT DEL CARRITO -->
 <script>
+
 let carrito = [];
 
-function agregarProducto(nombre){
+// AGREGAR PRODUCTO
+function agregarProducto(producto){
 
-    carrito.push(nombre);
+carrito.push(producto);
 
-    actualizarCarrito();
+actualizarCarrito();
+
 }
 
+// ELIMINAR ÚLTIMO
 function eliminarProducto(){
 
-    if(carrito.length > 0){
-        carrito.pop();
-    }
+if(carrito.length > 0){
 
-    actualizarCarrito();
+carrito.pop();
+
+actualizarCarrito();
+
 }
 
+}
+
+// ACTUALIZAR CARRITO
 function actualizarCarrito(){
 
-    const lista = document.getElementById("lista-carrito");
-    const listaOffcanvas = document.getElementById("lista-carrito-offcanvas");
-    const contador = document.getElementById("contador-carrito");
+const lista = document.getElementById("lista-carrito");
 
-    lista.innerHTML = "";
-    listaOffcanvas.innerHTML = "";
+const listaOffcanvas = document.getElementById("lista-carrito-offcanvas");
 
-    if(carrito.length === 0){
+const contador = document.getElementById("contador-carrito");
 
-        lista.innerHTML = `
-        <li class="list-group-item text-muted text-center">
-            No hay productos
-        </li>`;
+// LIMPIAR
+lista.innerHTML = "";
 
-        listaOffcanvas.innerHTML = `
-        <li class="list-group-item text-muted text-center">
-            No hay productos
-        </li>`;
-    }
+listaOffcanvas.innerHTML = "";
 
-    carrito.forEach(producto => {
+// SI NO HAY PRODUCTOS
+if(carrito.length === 0){
 
-        lista.innerHTML += `
-        <li class="list-group-item">
-            ${producto}
-        </li>`;
+lista.innerHTML = `
+<li class="list-group-item text-muted text-center">
+No hay productos
+</li>
+`;
 
-        listaOffcanvas.innerHTML += `
-        <li class="list-group-item">
-            ${producto}
-        </li>`;
-    });
+listaOffcanvas.innerHTML = `
+<li class="list-group-item text-muted text-center">
+No hay productos
+</li>
+`;
 
-    contador.textContent = carrito.length;
 }
+
+// AGREGAR PRODUCTOS
+for(let i = 0; i < carrito.length; i++){
+
+lista.innerHTML += `
+<li class="list-group-item">
+${carrito[i]}
+</li>
+`;
+
+listaOffcanvas.innerHTML += `
+<li class="list-group-item">
+${carrito[i]}
+</li>
+`;
+
+}
+
+// ACTUALIZAR CONTADOR
+contador.innerText = carrito.length;
+
+}
+
 </script>
 
+<!-- BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
