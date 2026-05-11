@@ -381,8 +381,64 @@
 
 </footer>
 
-<!-- JS -->
-<script src="carrito.js"></script>
+<!-- SCRIPT DEL CARRITO -->
+<script>
+let carrito = [];
+
+function agregarProducto(nombre){
+
+    carrito.push(nombre);
+
+    actualizarCarrito();
+}
+
+function eliminarProducto(){
+
+    if(carrito.length > 0){
+        carrito.pop();
+    }
+
+    actualizarCarrito();
+}
+
+function actualizarCarrito(){
+
+    const lista = document.getElementById("lista-carrito");
+    const listaOffcanvas = document.getElementById("lista-carrito-offcanvas");
+    const contador = document.getElementById("contador-carrito");
+
+    lista.innerHTML = "";
+    listaOffcanvas.innerHTML = "";
+
+    if(carrito.length === 0){
+
+        lista.innerHTML = `
+        <li class="list-group-item text-muted text-center">
+            No hay productos
+        </li>`;
+
+        listaOffcanvas.innerHTML = `
+        <li class="list-group-item text-muted text-center">
+            No hay productos
+        </li>`;
+    }
+
+    carrito.forEach(producto => {
+
+        lista.innerHTML += `
+        <li class="list-group-item">
+            ${producto}
+        </li>`;
+
+        listaOffcanvas.innerHTML += `
+        <li class="list-group-item">
+            ${producto}
+        </li>`;
+    });
+
+    contador.textContent = carrito.length;
+}
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
